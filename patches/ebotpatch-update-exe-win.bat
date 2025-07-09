@@ -64,7 +64,7 @@ del "%CURRENT_EXE%" && (
     )
 )
 
-del PATCH_FILE
+del %PATCH_FILE%
 
 REM Prepend to log file (newest first)
 echo %PATCH_VERSION% > temp.log
