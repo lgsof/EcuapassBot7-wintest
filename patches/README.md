@@ -6,6 +6,8 @@ Extracción y digitación automática de docuentos al ECUAPASS.
 
 
 ## LOG
+Jul/10: r0.9868: Removed commander exe from git (created when patched)
+
 Jul/09: r0.9867: EcuBot7 for COREBD::TSP (Without customs, no full test)
 
 Jul/09: r0.9866: EcuBot7 Installed in TRNSCMI. Fixed: MRN (gnral). Descripcion (rturn). Embalajes (Unidad, Tarima). MCI Ids (OTROS)
