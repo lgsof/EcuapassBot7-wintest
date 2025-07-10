@@ -1,1 +1,1 @@
-Jul/10: r0.9868: Removed commander exe from git (created when patched)
+Jul/10: r0.9869: Tested new patching model (no commander exe). Improved contenedores extraction.
