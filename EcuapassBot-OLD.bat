@@ -44,6 +44,16 @@ if errorlevel 1 (
     echo ADVERTENCIA: Falló git reset. Continuando con los archivos actuales.
 )
 
+:: ========================================================
+:: Evitar sobrescritura del EXE solo la primera vez
+if not exist .commander_patched (
+    echo +++ Aplicando assume-unchanged por primera vez...
+    git update-index --assume-unchanged ecuapass_commander\ecuapass_commander.exe
+    echo done > .commander_patched
+) else (
+    echo +++ El ejecutable ya está marcado como assume-unchanged.
+)
+
 echo ========================================================
 echo +++ Actualizando ejecutable commander...
 call patches\ebotpatch-update-exe-win.bat
