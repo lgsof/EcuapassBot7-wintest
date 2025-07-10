@@ -6,6 +6,8 @@ Extracción y digitación automática de docuentos al ECUAPASS.
 
 
 ## LOG
+Jul/10: r0.9870: Improved getCargaInfo.
+
 Jul/10: r0.9869: Tested new patching model (no commander exe). Improved contenedores extraction.
 
 Jul/10: r0.9868: Removed commander exe from git (created when patched)
