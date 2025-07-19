@@ -34,6 +34,12 @@ if errorlevel 1 (
 )
 
 echo ========================================================
+REM Proteger ejecutable parcheado para que Git no lo toque
+REM (idempotente: si ya está marcado, git no cambia nada)
+git update-index --skip-worktree bin\ecuapass_commander.exe
+REM -----------------------------------------------------------------
+
+echo ========================================================
 echo +++ Archivos que se actualizarán:
 git --no-pager diff --name-status HEAD origin/main
 
