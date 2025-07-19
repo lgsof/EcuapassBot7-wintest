@@ -24,7 +24,7 @@ if not exist ".git" (
 )
 
 echo ====== Evitar actualizacio del commander =======================
-git update-index --skip-worktree bin\ecuapass_commander.exe
+git update-index --skip-worktree ecuapass_commander\ecuapass_commander.exe
 
 
 echo ====== Buscando actualizaciones ================================
