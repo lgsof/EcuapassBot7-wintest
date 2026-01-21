@@ -58,14 +58,19 @@ if not exist ".git" (
     goto :ejecutar_app
 )
 
+echo ====== Evitando que se actualize el commander =======================
+git update-index --skip-worktree ecuapass_commander\ecuapass_commander.exe
+
 echo ====== Buscando actualizaciones ================================
-git fetch origin
+git fetch origin main
 if %ERRORLEVEL% EQU 1 (
     echo ADVERTENCIA: Fallo en git fetch. Se omite la actualizacion.
     goto :ejecutar_app
 )
+
 echo ====== Archivos que se actualizan ==============================
-git --no-pager diff --name-status origin/main
+git --no-pager diff --name-status HEAD origin/main
+
 echo ====== Aplicando actualizaciones ===============================
 git reset --hard origin/main
 if %ERRORLEVEL% EQU 1 (
