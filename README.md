@@ -52,6 +52,8 @@ EcuapassBot se licencia por país y empresa. Cada licencia incluye instalación 
 ---
 
 ## LOG
+Jan/21 v7.45.5: Added dummy exe
+
 Jan/21 v7.45.4: Testing reductions in win repo (.git cleaned one repo, jre min, pyr pruned)
 
 Jan/20 v7.0.3.45.3: Reducing .git
